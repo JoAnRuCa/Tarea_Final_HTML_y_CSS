@@ -1,0 +1,92 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul class="menu" id="ancla">
+                <li class="submenu"><a href="Index.html">Inicio</a>
+                <ul class="submenuOculto">
+                    <li><a href="Index.html#introduccion">Introduccion</a></li>
+                    <li><a href="Index.html#historia">Historia</a></li>
+                    <li><a href="Index.html#personajes">Personajes</a></li>
+                </ul>
+                </li>
+                <li class="submenu"><a href="Razas.html">Razas</a>
+                    <ul class="submenuOculto">
+                        <li><a href="Razas.html#humes">Humes</a></li>
+                        <li><a href="Razas.html#vieras">Vieras</a></li>
+                        <li><a href="Razas.html#bangaas">Bangaas</a></li>
+                        <li><a href="Razas.html#moogles">Moogles</a></li>
+                        <li><a href="Razas.html#nu_mus">Nu mus</a></li>
+                        <li><a href="Razas.html#seeqs">Seeqs</a></li>
+                        <li><a href="Razas.html#grias">Grias</a></li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="Continentes.html">Continentes</a>
+                    <ul class="submenuOculto">
+                        <li><a href="Continentes.html#loar">Loar</a></li>
+                        <li><a href="Continentes.html#khamja">Khamja</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cuerpo principal -->
+    <main class="contacto">
+        <!-- Formulario -->
+        <h2>Formulario de Contacto</h2>
+        <section>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset>
+                   
+                    <legend>Información personal</legend>
+                    <div class="form50">
+                        <div class="formblock">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="formblock">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
+                        </div>
+                    </div>
+                    <div class="formblock">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                </fieldset> 
+                <fieldset>    
+                    <legend>Datos de contacto</legend>
+                    <div class="formblock">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="formblock">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                </fieldset> 
+                <fieldset>  
+                    <legend>Dejanos aquí tus ideas</legend> 
+                    <div class="formblock">
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" row="4" cols="40"></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Mi Sitio Web.</p>
+    </footer>
+</body>
+</html>

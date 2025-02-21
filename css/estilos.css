@@ -1,0 +1,220 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales */
+body { /* Reglas del body*/
+    font-family: 'Roboto', sans-serif; 
+    background-color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+h1{  /* Centrado del título principal */
+    color: white;
+    text-align: center; 
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2, h3 { /* Color del texto para los títulos */
+    color: #2c3e50; 
+}
+
+
+h2 { /* Centrado del subtítulo */
+    text-align: center; 
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos de navegación */
+header { /* Color de fondo del header */
+    background-color: #34495e; 
+    padding: 20px 0;
+}
+
+
+
+nav ul { /* Reglas para centrarlo y quitar los adornos*/
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.submenuOculto{ /* Esconde el submenu*/
+    display: none; 
+    position: absolute;
+    top: 100%;
+    background-color: #34495e;
+}
+
+.submenu:hover .submenuOculto{ /*Muestra el submenu al posar el ratón encima*/
+    display:flex;
+}
+
+.submenu{ /* Me permite mover el submenu oculto */
+    position: relative;
+}
+
+nav a { /* Eliminar el subrayado de los enlaces, el subrayado y pone el color de la letra */
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.2em;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav a:hover { /* Cambia el color de fondo al pasar el ratón */
+    background-color: #1abc9c; 
+    color: yellow;
+}
+
+
+/* Estilos para el contenido principal  */
+main {
+    text-align: justify;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: flex-start; 
+    max-width:70%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.razaIzquierda{ /* Ayuda a mostrar el contenido correctamente */
+    margin-left: 25%;
+}
+
+.razaDerecha{ /* Ayuda a mostrar el contenido correctamente */
+    margin-right: 25%;
+}
+
+section { /* Modifica los section para que se vean en fila*/
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+    width: 100%; 
+    margin-bottom: 20px;
+    height: 50%;
+    align-items: center;
+}
+
+#introduccion{ /* Lo centra verticalmente*/
+    display: flex;
+    align-items: center; 
+}
+
+article{ /* Los articles ocupan solo la mitad del body */
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.contacto section{
+    justify-content: center;
+}
+
+#personajes article{ /* En la sección de personajes ocupen todos la misma anchura*/
+width: 33.3%;
+}
+
+#personajes{ /* Con esto conseguimos que en este section las imagenes esten a la misma altura */
+    align-items: start;
+}
+
+figure{ /* Elimina el margin del figure*/
+    margin-bottom: auto;
+}
+
+
+.imagenAltura{ /*Para que no se salga del padre y tenga un máximo de altura*/
+    width: 100%; 
+    max-height: 400px; 
+    margin: 0 auto; 
+}
+
+.imagenAltura img{ /*Para que las imagenes no se deformen*/
+    max-width: 100%; 
+    max-height: 400px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.continentes section figure{ /* Regla especial para las figuras de continentes para una mejor visualización*/
+    width: 50%;
+}
+
+.imagenDerecha img{ /* Ayuda a mostrar el contenido correctamente */
+    margin-right: 50%;
+}
+
+.imagenIzquierda img{ /* Ayuda a mostrar el contenido correctamente */
+    margin-left: 50%;
+}
+
+form{ /* Con esto el formulario más responsive*/
+    width: 100%;
+    max-width: 800px;
+}
+
+fieldset{ /* Con estas normas dejamos más espacio entre los fielset y hacemos que se muestren en columna */
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form50{ /* El espacio entre nombre y apellido */
+    display: flex;
+    gap: 15px;
+}
+
+.form50>.formblock{ /* Con esto el nombre y apellido ocupan la mitad del formulario */
+    width: 50%;
+}
+
+.formblock{ /* Espacio entre los campos del formulario */
+    margin-bottom: 15px;
+}
+
+.formblock label{ /* El label se muestra encima del formulario */
+    display: block;
+}
+
+.formblock input, .formblock textarea{ /* El campo del formulario se muestra debajo del label */
+    display: block;
+    width: 100%;
+}
+
+.formblock textarea{ /* Para que la caja de comentarios se vea más grande */
+    resize: none;
+    height: 150px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #34495e; 
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+
+
