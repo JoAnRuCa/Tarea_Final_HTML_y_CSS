@@ -111,7 +111,7 @@ section { /* Modifica los section para que se vean en fila*/
     align-items: center;
 }
 
-#introduccion{ /* Lo centra verticalmente*/
+#sectionIntro{ /* Lo centra verticalmente*/
     display: flex;
     align-items: center; 
 }
@@ -126,11 +126,11 @@ article{ /* Los articles ocupan solo la mitad del body */
     justify-content: center;
 }
 
-#personajes article{ /* En la sección de personajes ocupen todos la misma anchura*/
+#sectionPersonajes article{ /* En la sección de personajes ocupen todos la misma anchura*/
 width: 33.3%;
 }
 
-#personajes{ /* Con esto conseguimos que en este section las imagenes esten a la misma altura */
+#sectionPersonajes{ /* Con esto conseguimos que en este section las imagenes esten a la misma altura */
     align-items: start;
 }
 
